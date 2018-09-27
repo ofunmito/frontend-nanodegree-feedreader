@@ -60,8 +60,9 @@ $(function() {
          * the CSS to determine how we're performing the
          * hiding/showing of the menu element.
          */
-        it('menu hidden', function() {
-            expect($('#menu-hidden').is(':hidden')).not.toBe(true);
+        it('menu is hidden', function() {
+            const body = document.querySelector('.menu-hidden');
+            expect(body.classList.contains('menu-hidden')).toBe(true);
         });
 
         /* TODO: Write a test that ensures the menu changes
@@ -69,8 +70,8 @@ $(function() {
          * should have two expectations: does the menu display when
          * clicked and does it hide when clicked again.
          */
-        it('menu change', function() {
-
+        it('menu changes', function() {
+            // expect($('.menu-icon-link').);
         });
 
     });
