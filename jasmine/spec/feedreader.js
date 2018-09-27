@@ -61,7 +61,7 @@ $(function() {
          * hiding/showing of the menu element.
          */
         it('menu hidden', function() {
-
+            expect($('#menu-hidden').is(':hidden')).not.toBe(true);
         });
 
         /* TODO: Write a test that ensures the menu changes
