@@ -36,7 +36,6 @@ $(function() {
                 expect(allFeeds[index].url).toBeDefined();
                 expect(allFeeds[index].url).not.toBe(null);
             });
-
         });
 
 
@@ -49,7 +48,6 @@ $(function() {
                 expect(allFeeds[index].name).toBeDefined();
                 expect(allFeeds[index].name).not.toBe(null);
             });
-
         });
     });
 
