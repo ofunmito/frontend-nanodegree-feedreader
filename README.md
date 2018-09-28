@@ -2,7 +2,7 @@
 
 In this project, a web-based application that reads RSS feeds is provided. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
 
-This app consists of *Four* Test suites and *Seven* specs as follows:
+This app consists of _Four_ Test suites and _Seven_ specs as follows:
 
 ## 1. RSS Feeds 
 ### specs
@@ -31,7 +31,7 @@ Test ensures when the `loadFeed` function is called and completes its work, ther
 Test ensures when a new feed is loaded by the `loadFeed` function that the content actually changes.
 
 
-### App Dependencies
+## App Dependencies
 
 - [jQuery 2.1.1](http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js)
-- [Jasmine]((http://jasmine.github.io/))
+- [Jasmine](http://jasmine.github.io/)
