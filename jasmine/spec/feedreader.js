@@ -88,13 +88,13 @@ $(function() {
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
         beforeEach(function(done) {
-            loadFeed(0);
-            done();
+            loadFeed(0, done);
         });
 
         // spec
         it('has at least one entry', function(done) {
-            expect($('.feed').children.length > 0).toBe(true);
+            let feed = document.querySelector('.feed');
+            expect(feed.children.length > 0).toBe(true);
             done();
         });
 
@@ -107,6 +107,22 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+        beforeEach(function(done) {
+            // Load first feed in the loadFeed Array
+            loadFeed(0);
+
+
+            // Load second feed in the array
+            loadFeed(1, done);
+        });
+
+
+        it('changes content', function(done) {
+            let feed = document.querySelector('.feed');
+            console.log(Array.from(feed.children));
+            done();
+        });
+
 
     });
 
