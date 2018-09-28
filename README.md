@@ -6,12 +6,12 @@ This app consists of **Four** Test suites and **Seven** specs as follows:
 
 ## 1. RSS Feeds 
 ### specs
-* `are defined`
-Test the `allFeeds` variable and ensures it has been defined and that it is not empty
+* `_are defined_`
+test the `allFeeds` variable and ensures it has been defined and that it is not empty
 * `each feed is defined`
-Test loops through each feed in the `allFeeds` object and ensures it has a URL defined and that the URL is not empty.
+test loops through each feed in the `allFeeds` object and ensures it has a URL defined and that the URL is not empty.
 * `each name is defined`
-Test loops through each feed in the `allFeeds` object and ensures it has a name defined and that the name is not empty.
+test loops through each feed in the `allFeeds` object and ensures it has a name defined and that the name is not empty.
 
 ## 2. The menu
 ### specs
