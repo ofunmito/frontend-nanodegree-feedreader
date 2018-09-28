@@ -107,22 +107,34 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+        const feed = document.querySelector('.feed');
+        const feedOneList = [];
+
         beforeEach(function(done) {
             // Load first feed in the loadFeed Array
             loadFeed(0);
-
-
+            // Make an array from links in first feed and 
+            // push each link into the feedOneList Array
+            // before loading second feed so we can compare
+            Array.from(feed.children).forEach(function(link) {
+                feedOneList.push(link.innerText);
+            });
             // Load second feed in the array
             loadFeed(1, done);
         });
 
 
         it('changes content', function(done) {
-            let feed = document.querySelector('.feed');
-            console.log(Array.from(feed.children));
+            /*
+             * Here, we must compare the loadFeed(1) children 
+             * to the feedOneList equivalents to be sure they
+             * are not equal
+             */
+            Array.from(feed.children).forEach(function(content, index) {
+                expect(content.innerText === feedOneList[index]).toBe(false);
+            });
             done();
         });
-
 
     });
 
