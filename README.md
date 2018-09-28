@@ -2,7 +2,7 @@
 
 In this project, a web-based application that reads RSS feeds is provided. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
 
-This app consists of _Four_ Test suites and _Seven_ specs as follows:
+This app consists of **Four** Test suites and **Seven** specs as follows:
 
 ## 1. RSS Feeds 
 ### specs
